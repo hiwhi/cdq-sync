@@ -11,9 +11,27 @@
 /tmp/
 
 ## Specific to RubyMotion:
-.dat*
 .repl_history
-build/
+build
+tags
+app/pixate_code.rb
+resources/*.nib
+resources/*.momd
+resources/*.storyboardc
+.DS_Store
+nbproject
+.redcar
+#*#
+*~
+*.sw[po]
+*.gem
+.eprj
+.sass-cache
+.idea
+.dat*.*
+vendor/Pods/
+vendor/Podfile.lock
+
 
 ## Documentation cache and generated files:
 /.yardoc/

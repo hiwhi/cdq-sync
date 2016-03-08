@@ -1,0 +1,2 @@
+class JDQManagedObject < CDQManagedObject
+end

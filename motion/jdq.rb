@@ -1,0 +1,2 @@
+module JDQ
+end
