@@ -5,11 +5,11 @@ before_install:
   - sudo chown -R travis ~/Library/RubyMotion
   - mkdir -p ~/Library/RubyMotion/build
   - sudo motion update
+  - gem install bundler
 gemfile:
   - Gemfile
 script:
-  - gem install bundler
-  - bundle install --jobs=3 --retry=3
+  - bundle install
   - bundle exec rake clean
   - bundle exec rake spec
   - bundle exec rake spec platform=osx
