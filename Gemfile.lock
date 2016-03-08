@@ -84,7 +84,7 @@ PLATFORMS
 DEPENDENCIES
   jdq!
   motion-stump
-  rake
+  rake (= 10.5.0)
 
 BUNDLED WITH
    1.11.2
