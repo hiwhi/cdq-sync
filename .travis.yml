@@ -1,7 +1,5 @@
 language: objective-c
 osx_image: xcode7.2
-rvm:
-  - 2.2.0
 before_install:
   - (ruby --version)
   - sudo chown -R travis ~/Library/RubyMotion
@@ -10,7 +8,7 @@ before_install:
 gemfile:
   - Gemfile
 script:
-  - bundle install
+  - bundle install --jobs=3 --retry=3
   - bundle exec rake clean
   - bundle exec rake spec
   - bundle exec rake spec platform=osx
